@@ -51,13 +51,14 @@ The Alumni Management System aims to provide a robust platform for managing alum
 - Manage alumni information
 - Register and manage events
 - Search for events by name and speaker
+- alumni can share job postings and referral opportunities, providing students with direct access to valuable career resources and networking opportunities
 - Responsive frontend built with React and Tailwind CSS
 
 ## Prerequisites
 
-- Java 21
+- Java 21 with sprint-boot
 - Node.js and npm
-- Docker and Docker Compose
+- Docker
 - PostgreSQL
 
 ## Installation
@@ -91,7 +92,7 @@ The Alumni Management System aims to provide a robust platform for managing alum
   keycloak.realm=alumni-management
   keycloak.resource=auth-app
   keycloak.credentials.secret=your-client-secret
-  keycloak.bearer-only=true
+  
 - Build backend
    ```sh
    ./gradlew build
@@ -135,25 +136,7 @@ The Alumni Management System aims to provide a robust platform for managing alum
       ```
 
 4. Access the application:
-   - Open your browser and navigate to http://localhost:3000
-  
-## API Endpoints
-- User Registration
-   - POST ```/api/user/register```
-   - Request Body: ```UserDTO```
-   - Description: Register a new user.
-     
-- Event Registration
-  - POST ```/api/event-registrations/register```
-    - Request Body: EventRegistrationDTO
-    - Description: Register for an event.
-  - GET ```/api/event-registrations```
-    - Description: Get all event registrations.
-      
-   - GET ```/api/event-registrations/search```
-
-    - Query Parameters: eventName, speaker
-    - Description: Search for event registrations by event name and speaker.
+   - Open your browser and navigate to http://localhost:5173
  
 ## Frontend
 The frontend is built with React and Tailwind CSS. It includes the following main components:
