@@ -8,7 +8,7 @@ const EventShowCase = () => {
     "src/assets/event.png",
     "/docs/images/carousel/carousel-2.svg",
     "/docs/images/carousel/carousel-3.svg",
-    "/docs/images/carousel/carousel-4.svg",
+    "/docs/images/carousel/caroul-4.svg",
     "/docs/images/carousel/carousel-5.svg",
   ];
 
