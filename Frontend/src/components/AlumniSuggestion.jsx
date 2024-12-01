@@ -28,7 +28,7 @@ const AlumniSuggestion = () => {
 //  }, []);
 
  return (
-   <div className="flex flex-wrap gap-4 p-6">
+   <div className=" flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-6 p-6">
      {alumniData.map((alumni) => (
        <AlumniSuggestionCard key={alumni.id} alumni={alumni} linkedin={true} />
      ))}

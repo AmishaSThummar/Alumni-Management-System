@@ -13,6 +13,7 @@ import Home from "./pages/Home.jsx";
 import AlumnisLIst from "./pages/AlumnisLIst.jsx";
 import Event from "./pages/Event";
 import JobsList from "./pages/JobsList.jsx";
+import Profile from "./pages/Profile.jsx";
 function App() {
   //states
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -72,6 +73,16 @@ function App() {
                 <Event setIsAuthenticated={setIsAuthenticated} />
               ) : (
                 <Navigate to="/login" />
+              )
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              true ? (
+                <Profile setIsAuthenticated={setIsAuthenticated} />
+              ) : (
+                <Navigate to="/Login" />
               )
             }
           />
